@@ -6,6 +6,7 @@ DATASET
 * Insights: We are hoping to learn from analyzing the datasets how profit correlates to ratings and budgets, as well as how popular principal actors affect profit and ratings.
 
 IMDb movies.csv
+link: https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset/data#IMDb%20movies.csv
 ---
 interesting attributes: title, date_published, country, budget, usa_gross_income, worlwide_gross_income
 imdb_title_id,title,original_title,year,date_published,genre,duration,country,language,director,writer,production_company,actors,description,avg_vote,votes,budget,usa_gross_income,worlwide_gross_income,metascore,reviews_from_users,reviews_from_critics
@@ -15,6 +16,7 @@ tt0002101,Cleopatra,Cleopatra,1912,1912-11-13,"Drama, History",100,USA,English,C
 tt0002130,L'Inferno,L'Inferno,1911,1911-03-06,"Adventure, Drama, Fantasy",68,Italy,Italian,"Francesco Bertolini, Adolfo Padovan",Dante Alighieri,Milano Film,"Salvatore Papa, Arturo Pirovano, Giuseppe de Liguoro, Pier Delle Vigne, Augusto Milla, Attilio Motta, Emilise Beretta",Loosely adapted from Dante's Divine Comedy and inspired by the illustrations of Gustav Doré the original silent film has been restored and has a new score by Tangerine Dream.,7.0,2019,,,,,28.0,14.0
 
 IMDb names.csv
+link: https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset/data#IMDb%20names.csv
 ---
 interesting attributes: name, known_for_titles
 imdb_name_id,name,birth_name,height,bio,birth_details,birth_year,date_of_birth,place_of_birth,death_details,death_year,date_of_death,place_of_death,reason_of_death,spouses,divorces,spouses_with_children,children,primary_profession,known_for_titles
@@ -23,6 +25,7 @@ nm0000002,Lauren Bacall,Betty Joan Perske,174.0,"Lauren Bacall was born Betty Jo
 nm0000003,Brigitte Bardot,Brigitte Bardot,166.0,"Brigitte Bardot was born on September 28, 1934 in Paris, France. Her father had an engineering degree and worked with his father in the family business. Brigitte's mother encouraged her daughter to take up music and dance, and she proved to be very adept at it. By the time she was 15, Brigitte was trying a modeling career, and found herself in the French magazine ""Elle"". Her incredible beauty readily apparent, Brigitte next tried films. In 1952, she appeared on screen for the first time as Javotte Lemoine in Le trou normand (1952). Two more films followed and it was also the same year she married Roger Vadim (the union lasted 3½ years). Capitalizing on her success in French films, Brigitte made her first American production in Un acte d'amour (1953) with Kirk Douglas, but she continued to make films in France. Brigitte's explosive sexuality took the United States by storm, and the effect she had on millions of American men who had not seen a woman like her in a long, long time--if ever--was electric. Rise to the phrase ""sex kitten"" and fascination of her in the United States consisted of magazines photographs and dubbed over French films--good, bad or indifferent, her films drew audiences--mainly men--into theaters like lemmings. In 1965, she appeared as herself in the American-made Dear Brigitte (1965) with James Stewart (she only appeared in one scene). Just before she turned 40, Brigitte retired from movies after filming L'histoire très bonne et très joyeuse de Colinot Trousse-Chemise (1973). She prefers life outside of stardom. While it enabled her to become internationally famous, it also carried with it annoyances. It was not anything for her to have ""fans"" enter her house or wander around the grounds of her home in the hopes of getting a glimpse of her or to take something that belonged to her. Paparazzi constantly hounded her with their cameras. She has been so soft-hearted that some people even have taken advantage of her generosity. After her life in the spotlight, Brigitte went on to become a leading spokesperson for animal rights and started the ""Foundation Brigitte Bardot"" dedicated solely to that cause. Her work in that realm is, perhaps, far greater than any film she could have made. Brigitte has been married to Bernard d'Ormale since 1992 and they reside in St. Tropez with their nearly 50 pets.","September 28, 1934 in Paris, France",1934.0,1934-09-28,"Paris, France",,,,,,4,3,1,1,"actress,soundtrack,producer","tt0054452,tt0059956,tt0057345,tt0049189"
 
 IMDb ratings.csv
+link: https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset/data#IMDb%20ratings.csv
 ---
 interesting attributes: us_voters_rating, non_us_voters_rating
 imdb_title_id,weighted_average_vote,total_votes,mean_vote,median_vote,votes_10,votes_9,votes_8,votes_7,votes_6,votes_5,votes_4,votes_3,votes_2,votes_1,allgenders_0age_avg_vote,allgenders_0age_votes,allgenders_18age_avg_vote,allgenders_18age_votes,allgenders_30age_avg_vote,allgenders_30age_votes,allgenders_45age_avg_vote,allgenders_45age_votes,males_allages_avg_vote,males_allages_votes,males_0age_avg_vote,males_0age_votes,males_18age_avg_vote,males_18age_votes,males_30age_avg_vote,males_30age_votes,males_45age_avg_vote,males_45age_votes,females_allages_avg_vote,females_allages_votes,females_0age_avg_vote,females_0age_votes,females_18age_avg_vote,females_18age_votes,females_30age_avg_vote,females_30age_votes,females_45age_avg_vote,females_45age_votes,top1000_voters_rating,top1000_voters_votes,us_voters_rating,us_voters_votes,non_us_voters_rating,non_us_voters_votes
@@ -32,6 +35,7 @@ tt0002101,5.2,420,5.2,5.0,12,8,16,60,89,111,58,26,24,16,,,4.6,24.0,5.1,104.0,5.3
 tt0002130,7.0,2019,6.9,7.0,194,208,386,571,308,153,59,37,19,84,7.0,2.0,7.0,429.0,7.0,783.0,7.1,430.0,7.0,1464.0,8.0,1.0,7.0,371.0,7.0,701.0,7.0,346.0,7.2,205.0,6.0,1.0,6.8,53.0,7.3,74.0,7.4,75.0,7.0,126.0,7.1,452.0,7.0,1076.0
 
 IMDb title_principals.csv
+link: https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset/data#IMDb%20title_principals.csv
 ---
 interesting attribute: category, job
 imdb_title_id,ordering,imdb_name_id,category,job,characters
