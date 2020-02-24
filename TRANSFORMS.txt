@@ -1,0 +1,36 @@
+Cast errors:
+
+% select cast(date_of_birth as date) as date_of_birth from imdb_modeled.Actors
+REASON: Some of the date_of_birth entries are just the year so big query is unable to cast them as date as it expects it in the format year-month-day. The same error for imdb_modeled.Directors and imdb_modeled.Writers also has the same case.
+
+% select cast(usa_gross_income as INT64) as usa_gross_income
+from imdb_modeled.Movies
+REASON: The $ comes up as an error when trying to cast the usa_gross_income as an integer, because big query does not expect the $ symbol. 
+
+% select cast(worlwide_gross_income as INT64) as worlwide_gross_income
+from imdb_modeled.Movies
+REASON: The $ comes up as an error when trying to cast the worlwide_gross_income as an integer, because big query does not expect the $ symbol. There are also errors when there are letters included for example INR for Indian Rupee. 
+
+% select cast(date_of_death as date) as date_of_death
+from imdb_modeled.Actors
+REASON: The date_of_death comes up with an errors such as, "car bomb" and other causes of death. So the attribute is renamed to cause_of_death since it had no dates. The same error for imdb_modeled.Directors and imdb_modeled.Writers also has the same case. 
+
+% select cast(birth_year as INT64) as birth_year
+from imdb_modeled.Actors
+order by birth_year
+REASON: No error from big query but the birth_year still has year.0. Same for .Writers and .Directors. 
+
+% select cast(death_year as INT64) as death_year
+from imdb_modeled.Actors
+order by death_year
+REASON: No error from big query but the death_year still has year.0. Same for .Writers and .Directors. 
+
+% select cast(date_published as date) as date_published
+from imdb_modeled.Movies
+REASON: Some of the date_published entries are just the year so big query is unable to cast them as date as it expects it in the format year-month-day. The same error for imdb_modeled.Directors and imdb_modeled.Writers also has the same case.
+
+% select cast(budget as INT64) as budget
+from imdb_modeled.Movies
+REASON: The $ comes up as an error when trying to cast the worlwide_gross_income as an integer, because big query does not expect the $ symbol. There are also errors when there are letters included for example GBP which is the British pound. 
+
+No Duplicate Errors
