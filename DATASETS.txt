@@ -43,3 +43,9 @@ tt0000574,1,nm0846887,actress,,"[""Kate Kelly""]"
 tt0000574,2,nm0846894,actor,,"[""School Master""]"
 tt0000574,3,nm3002376,actor,,"[""Steve Hart""]"
 tt0000574,4,nm0170118,actress,,
+
+GDP DATASET
+* Description: These datasets are world measurements of GDP, military expenditure, population, and land area per country per year between 1960 to 2018.
+* Relationships: The tables are each connected through their 'Country Name'  and 'Country Code' columns which allow each table to be joined with each other.
+* Analysis: Currently we are interested in analyzing the GDP per country per year, their military expenditure as percents of their GDP, and the population levels per country.
+* Insights: We are hoping to learn how GDP per country affects the budgets for movies made within the country at that year and their overall ratings.
