@@ -44,16 +44,16 @@ tt0000574,2,nm0846894,actor,,"[""School Master""]"
 tt0000574,3,nm3002376,actor,,"[""Steve Hart""]"
 tt0000574,4,nm0170118,actress,,
 
-GDP DATASET
-* Description: These datasets are world measurements of GDP, military expenditure, population, and land area per country per year between 1960 to 2018.
+World Bank DATASET
+* Description: These datasets are world measurements of GDP and population per country per year between 1960 to 2018.
 * Relationships: The tables are each connected through their 'Country Name'  and 'Country Code' columns which allow each table to be joined with each other.
-* Analysis: Currently we are interested in analyzing the GDP per country per year, their military expenditure as percents of their GDP, and the population levels per country.
-* Insights: We are hoping to learn how GDP per country affects the budgets for movies made within the country at that year and their overall ratings.
+* Analysis: Currently we are interested in analyzing the GDP per country per year and the population levels per country.
+* Insights: We are hoping to learn how the GDP of a country affects the budgets, the world wide gross income, and the overall ratings for movies made within the country at that year.
 
 World Bank Pop total
 Link: https://www.kaggle.com/greeshmagirish/worldbank-data-on-gdp-population-and-military#API_SP.POP.TOTL_DS2_en_csv_v2_511378.csv
 ---
-Interesting attributes: Population, year
+Interesting attributes: Indicator Name(Population)
 "Country Name","Country Code","Indicator Name","Indicator Code","Year",
 "Aruba","ABW","Population, total","SP.POP.TOTL","54211","55438","56225","56695","57032","57360","57715","58055","58386","58726","59063","59440","59840","60243","60528","60657","60586","60366","60103","59980","60096","60567","61345","62201","62836","63026","62644","61833","61079","61032","62149","64622","68235","72504","76700","80324","83200","85451","87277","89005","90853","92898","94992","97017","98737","100031","100834","101222","101358","101455","101669","102046","102560","103159","103774","104341","104872","105366","105845","",
 "Afghanistan","AFG","Population, total","SP.POP.TOTL","8996973","9169410","9351441","9543205","9744781","9956320","10174836","10399926","10637063","10893776","11173642","11475445","11791215","12108963","12412950","12689160","12943093","13171306","13341198","13411056","13356511","13171673","12882528","12537730","12204292","11938208","11736179","11604534","11618005","11868877","12412308","13299017","14485546","15816603","17075727","18110657","18853437","19357126","19737765","20170844","20779953","21606988","22600770","23680871","24726684","25654277","26433049","27100536","27722276","28394813","29185507","30117413","31161376","32269589","33370794","34413603","35383128","36296400","37172386","",
@@ -62,13 +62,33 @@ Interesting attributes: Population, year
 World Bank GDP
 Link: https://www.kaggle.com/greeshmagirish/worldbank-data-on-gdp-population-and-military#API_NY.GDP.MKTP.CD_DS2_en_csv_v2_559588.csv
 ---
-Interesting attributes: GDP, Year
+Interesting attributes: Indicator Name(GDP)
 "Country Name","Country Code","Indicator Name","Indicator Code","Year"
 "Aruba","ABW","GDP (current US$)","NY.GDP.MKTP.CD","","","","","","","","","","","","","","","","","","","","","","","","","","","405463417.11746","487602457.746416","596423607.114715","695304363.031101","764887117.194486","872138730.754587","958463200.205402","1082979707.65566","1245688253.10539","1320474860.3352","1379960893.85475","1531944134.07821","1665100558.65922","1722798882.68156","1873452513.96648","1920111731.84358","1941340782.12291","2021229050.27933","2228491620.11173","2330726256.98324","2424581005.58659","2615083798.88268","2745251396.64804","2498882681.56425","2390502793.29609","2549720670.39106","2534636871.50838","2581564245.81006","2649720670.39106","2691620111.73184","2646927374.30168","2700558659.21788","","",
 "Afghanistan","AFG","GDP (current US$)","NY.GDP.MKTP.CD","537777811.111111","548888895.555556","546666677.777778","751111191.111111","800000044.444444","1006666637.77778","1399999966.66667","1673333417.77778","1373333366.66667","1408888922.22222","1748886595.55556","1831108971.11111","1595555475.55556","1733333264.44444","2155555497.77778","2366666615.55556","2555555566.66667","2953333417.77778","3300000108.88889","3697940409.61098","3641723321.99546","3478787909.09091","","","","","","","","","","","","","","","","","","","","","4055176933.36905","4515563413.82564","5226775163.30205","6209140044.00519","6971286731.72065","9747886104.53251","10109218067.7904","12439087076.7667","15856574731.4411","17804280538.1102","20001615788.6719","20561054090.3995","20484873230.2111","19907111418.9938","19362642266.6484","20191764940.1602","19362969582.3643","",
 "Angola","AGO","GDP (current US$)","NY.GDP.MKTP.CD","","","","","","","","","","","","","","","","","","","","","5930503400.83228","5550483035.90815","5550483035.90815","5784341596.36339","6131475065.23832","7553560459.10428","7072063345.44786","8083872012.47326","8769250549.73596","10201099039.5655","11228764963.1618","10603784541.197","8307810973.58848","5768720421.61367","4438321017.39068","5538749259.94714","7526446605.51712","7648377412.83277","6506229607.29432","6152922942.98032","9129594818.60749","8936063723.20121","15285594828.418","17812705294.325","23552052407.5488","36970918699.2523","52381006892.038","65266452081.386","88538611205.1433","70307163678.238","83799496611.2004","111789686464.441","128052853643.106","136709862831.194","145712200312.505","116193649124.151","101123851090.455","122123822333.591","105750987618.63","",
 
+Mod World Bank DATASET
+* Description: These datasets are world measurements of GDP and population per country per year between 1960 to 2018.
+* Relationships: The tables are each connected through their 'Country Name'  and 'Country Code' columns which allow each table to be joined with each other. They can also be joined together by 'Year'.
+* Analysis: Currently we are interested in analyzing the GDP per country per year and the population levels per country.
+* Insights: We are hoping to learn how the GDP of a country affects the budgets, the world wide gross income, and the overall ratings for movies made within the country at that year.
 
+Mod World Bank Pop Total
+Link: https://storage.cloud.google.com/nullbusters_data/worldbank_gdp_pop_military/Modified_API_NY.GDP.MKTP.CD_DS2_en_csv_v2_559588.csv
+---
+Interesting Attributes: Population, Year
+Country Name,Country Code,Indicator Name,Indicator Code,Year,Population
+Aruba,ABW,"Population, total",SP.POP.TOTL,1960,54211
+Afghanistan,AFG,"Population, total",SP.POP.TOTL,1960,8996973
+Angola,AGO,"Population, total",SP.POP.TOTL,1960,5454933
 
-
+Mod World Bank GDP
+Link: https://storage.cloud.google.com/nullbusters_data/worldbank_gdp_pop_military/Modified_API_NY.GDP.MKTP.CD_DS2_en_csv_v2_559588.csv
+---
+Interesting Attributes: GDP, Year 
+Country Name,Country Code,Indicator Name,Indicator Code,Year,GDP
+Aruba,ABW,GDP (current US$),NY.GDP.MKTP.CD,1960,
+Afghanistan,AFG,GDP (current US$),NY.GDP.MKTP.CD,1960,537777811.1
+Angola,AGO,GDP (current US$),NY.GDP.MKTP.CD,1960,
 
