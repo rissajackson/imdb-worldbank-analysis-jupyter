@@ -1,0 +1,15 @@
+Query 1:
+This query would join the worldbank_modeled.GDP table with the worldbank_modeled.Countries by the "country_id" column and then to the imdb_modeled.Movies table on country to find out where the budget for movies made in one country exceeded the world wide gross income for that movie. It would group by year to figure out the answer for each year. Which would allow us to see which movies from which countries are considered flops by not making more than their budget.
+
+The transformations this query will require are for the imdb_modeled.Movies table to have standardized spelling of countries. Also to split countries in different columns when there are multiple. 
+
+Query 2:
+This query would join the worldbank_modeled.Pop_Total table with the worldbank_modeled.Countries table using "country_id" column and then join to the imdb_modeled.Movies table using the country where the year when the movie is made is equal to a year from the Pop_Total table. Finally, the resulting table would be joined to the imdb_modeled.Ratings table using the imdb_title_id to find out if GDP in the country where a movie is made dictates if the movie would do better overseas or domestically roughly through US and non US ratings. We can also check how GDP correlates to the ratings overall.
+
+The transformations this query will require are for the imdb_modeled.Movies table to have standardized spelling of countries. Also to split the countries in different columns when there are multiple. 
+
+
+Query 3:
+This query would join the worldbank_modeled.GDP table with the worldbank_modeled.Countries table using the "country_id" column and then join to the imdb_modeled.Movies using the "countries" column where the year on the worldbank_modeled.GDP table is the same to the year in imdn_modeled.Movies (when the movie was released). This would help us predict if there are any correlations between the GDP of a country at a given year to that of the duration of movies made in that country. This query allows us to drive the hypothesis that countries struggling with their economic health might release extended (longer duration) movies to potentially generate more income and economic activity.
+
+The transformations this query will require are for the imdb_modeled.Movies table to have standardized spelling of countries. Also to split the countries in different columns when there are multiple. 
