@@ -1,3 +1,4 @@
+imdb:
 Cast errors:
 
 % select cast(date_of_birth as date) as date_of_birth from imdb_modeled.Actors
@@ -34,3 +35,6 @@ from imdb_modeled.Movies
 REASON: The $ comes up as an error when trying to cast the worlwide_gross_income as an integer, because big query does not expect the $ symbol. There are also errors when there are letters included for example GBP which is the British pound. 
 
 No Duplicate Errors
+
+worldbank:
+There are no duplicate errors. Each table has a primary key. There are no cast errors. 
