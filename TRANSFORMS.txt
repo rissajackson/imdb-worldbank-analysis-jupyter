@@ -36,5 +36,8 @@ REASON: The $ comes up as an error when trying to cast the worlwide_gross_income
 
 No Duplicate Errors
 
+imdb transformation:
+Split the country column into country and other_countries and change USA and UK to United States and United Kingdom. So that dataset 2 can be joined on country
+
 worldbank:
 There are no duplicate errors. Each table has a primary key. There are no cast errors. 
