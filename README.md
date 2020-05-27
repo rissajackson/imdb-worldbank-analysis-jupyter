@@ -1,6 +1,1 @@
-Oscar Ortiz\
-ooo634\
-oortiz03@yahoo.com\
-Charissa Jackson\
-cej727\
-charissa.jackson928@gmail.com
+To get an overview on the project and see the final visualizations: https://github.com/rissajackson/imdb-worldbank-analysis-jupyter/blob/master/slides.pdf
